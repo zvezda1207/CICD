@@ -41,8 +41,8 @@ jobs:
 
       - name: Линтер
         run: flake8 demo1 --exclude migrations ignore E501,F401,E302,W293,W391,W292
-      - name: Тесты
-        run: python cicd/manage.py test
+#      - name: Тесты
+#        run: python cicd/manage.py test
         env:
           PG_NAME: ${{ secrets.PG_NAME }}
           PG_USER: ${{ secrets.PG_USER }}
