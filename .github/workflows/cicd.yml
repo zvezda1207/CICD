@@ -61,7 +61,7 @@ jobs:
           username: deploy
           password: 1506
           script: |
-            cd /cicd
+            cd /home/deploy/cicd
             git pull
             sudo systemctl restart gunicorn
 
